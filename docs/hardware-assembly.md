@@ -65,6 +65,7 @@ Print the three KVX parts plus the mount for your headset. All files are in the 
 
 - 3D printer (the complete plate is set up for Bambu Lab)
 - Soldering iron
+- Double-sided tape, to hold the boards in the box
 - USB-C data cable, for flashing the LOLIN S3
 - PC with [PlatformIO](https://platformio.org/) and the ToolKitOSC desktop app
 - 2.4 GHz Wi-Fi network
@@ -100,7 +101,7 @@ Open question: the Grove driver is specified for 5 V; check that a 3.3 V HIGH fr
 
    ![All KVX parts laid out](../photos/web/20261010_194210.jpg)
 
-2. Seat the Grove driver in the upper bay of the box and the LOLIN S3 below it, with both USB-C ports facing the cutout in the side wall.
+2. Seat the Grove driver in the upper bay of the box and the LOLIN S3 below it, with both USB-C ports facing the cutout in the side wall. Stick both boards down with double-sided tape so they don't shift; the next version will hold them in place.
 
    ![Driver and LOLIN S3 seated in the box](../photos/web/20261010_194624.jpg)
 

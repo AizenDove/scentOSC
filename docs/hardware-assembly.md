@@ -9,7 +9,7 @@ Oct 12, 2026 · @AizenDove
 Build and use KVX at your own risk. We take no responsibility for injury, illness or damage.
 
 - **Health:** breathing in scented mist may be unhealthy. If you feel unwell, take the headset off, and see a doctor if it doesn't pass.
-- **Water and electronics:** the unit puts liquid next to live electronics. Keep the box dry and unplug it before refilling.
+- **Water and electronics:** the unit puts liquid next to live electronics. We take no responsibility for broken electrical components or water damage.
 - **Not leak-proof:** don't lean too far forward or lie down while wearing it.
 - **Run time:** the reservoir holds about 7 ml, roughly 2–3 minutes of continuous mist.
 - **Spares:** keep spare transducers, as the piezo discs break easily. The wick is a consumable: replace it every time you refill.

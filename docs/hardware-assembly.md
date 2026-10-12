@@ -14,9 +14,9 @@ Build and use KVX at your own risk. We take no responsibility for injury, illnes
 
 ## Overview
 
-This guide builds KVX, a 73 g scent emitter that mounts on your VR headset: a WEMOS LOLIN S3 drives one Grove ultrasonic atomizer, and VRChat triggers it through [ToolKitOSC](https://github.com/NekoTiki/ToolKitOSC). KVX follows KV7 from the research project *Immersive Enhancement of Game Experience by Smell Sensing* (GALA 2025), cut down from six capsules to one and moved from Unity and Bluetooth to VRChat over Wi-Fi.
+This guide builds KVX, a 73 g scent emitter that mounts on your VR headset: a WEMOS LOLIN S3 drives one Grove ultrasonic atomizer, and VRChat triggers it through [ToolKitOSC](https://github.com/NekoTiki/ToolKitOSC).
 
-The signal path is VRChat → OSC → the ToolKitOSC desktop app → WebSocket over Wi-Fi → the ESP32 → one GPIO pin → the atomizer. The atomizer vibrates a piezo disc at ultrasonic frequency and turns scented water into a mist aimed under your nose. There are no fans: the paper found fans spread the scent too widely and weakened it.
+The signal path is VRChat → OSC → the ToolKitOSC desktop app → WebSocket over Wi-Fi → the ESP32 → one GPIO pin → the atomizer.
 
 The finished unit weighs 73 g, holds one scent capsule and runs on 5 V over USB-C, so your headset can power it. Every part prints on a desktop 3D printer, and mounts exist for Meta Quest 3, Pico 4 and Steam Frame.
 

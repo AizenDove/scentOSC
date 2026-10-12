@@ -74,6 +74,7 @@ scentOSC/
     ├── Cap.stl            lid
     ├── Container.stl      reservoir tower
     ├── bambu-lab-quest-3-complete.3mf
+    ├── step-files/        STEP versions of the KVX parts, for editing
     └── mounts/            third-party headset mounts
         ├── quest-3/
         ├── pico-4/
@@ -107,6 +108,8 @@ Print the three KVX parts plus the mount for your headset. All files are in [`pr
 | [Cap.stl](print-files/Cap.stl) | Lid for the box | None |
 | [Container.stl](print-files/Container.stl) | Reservoir tower for the atomizer holder | None |
 | [bambu-lab-quest-3-complete.3mf](print-files/bambu-lab-quest-3-complete.3mf) | All parts plus the Quest 3 mount on one Bambu Lab plate | Set in the file |
+
+To modify the KVX parts in CAD, use the STEP versions in [`print-files/step-files/`](print-files/step-files).
 
 > [!TIP]
 > **Print settings:** 0.2 mm layers, 3 wall loops, 10% infill. Lay each KVX part with its largest flat face on the build plate.
@@ -245,7 +248,7 @@ To unpair, hold BOOT for 3 s while the board runs. To factory reset, hold it for
 
 Copyright Chelsea Hong 2026.
 
-KVX is open hardware, licensed under the [CERN Open Hardware Licence Version 2 – Strongly Reciprocal](LICENSE) (CERN-OHL-S v2). This covers the KVX print files (`Box.stl`, `Cap.stl`, `Container.stl`), this guide, the logo and the photos in `assets/`.
+KVX is open hardware, licensed under the [CERN Open Hardware Licence Version 2 – Strongly Reciprocal](LICENSE) (CERN-OHL-S v2). This covers the KVX print files (`Box.stl`, `Cap.stl`, `Container.stl`) and their STEP versions, this guide, the logo and the photos in `assets/`.
 
 You may use, modify and share the design, and build and sell products from it. If you share a modified version, or products made from one, you must also share your modified source under the same licence.
 

@@ -62,6 +62,7 @@ Print the three KVX parts plus the mount for your headset. All files are in the 
 ## Tools needed
 
 - 3D printer (the complete plate is set up for Bambu Lab)
+- Soldering iron
 - USB-C data cable, for flashing the LOLIN S3
 - PC with [PlatformIO](https://platformio.org/) and the ToolKitOSC desktop app
 - 2.4 GHz Wi-Fi network

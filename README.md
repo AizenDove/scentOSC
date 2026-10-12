@@ -117,7 +117,7 @@ Print the three KVX parts plus the mount for your headset. All files are in [`pr
 | --- | --- | --- | --- |
 | Meta Quest 3 | [Q3_Mount.stl](print-files/mounts/quest-3/Q3_Mount.stl) | [GUUUL on Thingiverse](https://www.thingiverse.com/thing:7261225), CC BY-SA | ✅ Yes |
 | Steam Frame | [sfmountv2.stl](print-files/mounts/steam-frame/sfmountv2.stl) | Third party, [Printables](https://www.printables.com/model/1868935-steam-frame-mount-for-vive-tracker-face-tracker) | ❌ No |
-| Pico 4 | [HMD_Mount.stl](print-files/mounts/pico-4/HMD_Mount.stl) | Third party | ❌ No |
+| Pico 4 | [HMD_Mount.stl](print-files/mounts/pico-4/HMD_Mount.stl) | Third party, [Printables](https://www.printables.com/model/495514-pico-4-babble-mouth-tracker-mount) | ❌ No |
 
 ## Tools needed
 

@@ -50,13 +50,13 @@ Print the three KVX parts plus the mount for your headset. All files are in the 
 
 **Print settings:** 0.2 mm layers, 3 wall loops, 10% infill. Lay each KVX part with its largest flat face on the build plate.
 
-**Headset mounts** are third-party designs and may need supports:
+**Headset mounts** are third-party designs, not made by us, and may need supports. Only the Quest 3 mount has been tested with KVX; the Pico 4 and Steam Frame mounts are untested.
 
-| Headset | File | Designer |
-| --- | --- | --- |
-| Meta Quest 3 | [Q3_Mount.stl](<../downloads/HMD Mounts/Quest 3>) | [GUUUL on Thingiverse](https://www.thingiverse.com/thing:7261225), CC BY-SA |
-| Pico 4 | HMD_Mount.STL | Third party |
-| Steam Frame | sfmountv2.stl | Third party |
+| Headset | File | Designer | Tested with KVX |
+| --- | --- | --- | --- |
+| Meta Quest 3 | [Q3_Mount.stl](<../downloads/HMD Mounts/Quest 3>) | [GUUUL on Thingiverse](https://www.thingiverse.com/thing:7261225), CC BY-SA | Yes |
+| Steam Frame | [sfmountv2.stl](<../downloads/HMD Mounts/Steam Frame/sfmountv2.stl>) | Third party, [Printables](https://www.printables.com/model/1868935-steam-frame-mount-for-vive-tracker-face-tracker) | No |
+| Pico 4 | [HMD_Mount.STL](<../downloads/HMD Mounts/Pico 4/HMD_Mount.STL>) | Third party | No |
 
 Print in plastic, not wood: the paper's wooden mounts gave off their own smell and broke down from the moisture. Plastic stays odor-neutral and survives the mist.
 

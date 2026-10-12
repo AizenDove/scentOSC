@@ -39,18 +39,27 @@ Prices were checked on 12 Oct 2026. The LOLIN S3 price is from its launch and ma
 
 ## 3D printed parts
 
-Print the complete Quest 3 plate, plus the mount for your headset. All files are in the [FINAL STL](https://drive.google.com/drive/folders/1FvTILW04FyrTDNEXaO_OHBCcaqlfo1nk) folder on Google Drive.
+Print the three KVX parts plus the mount for your headset. All files are in the [downloads folder](../downloads).
 
-| File | Headset | What it is |
+| File | What it is | Supports |
 | --- | --- | --- |
-| [bambu lab q3 complete.3mf](https://drive.google.com/file/d/1EQ33ywxbDhRJlK_THJIlZEE7VoT1PhbY/view) | Meta Quest 3 | Every part on one Bambu Lab plate, settings included |
-| [facial tracker and tracker mount for Quest 3 – 7261225.zip](https://drive.google.com/file/d/1ib8Mwe17fqIEP2GjzXo_tigb27KtFRO-/view) | Meta Quest 3 | Headset mount |
-| [HMD_Mount.STL](https://drive.google.com/file/d/1RLUvCJ6wpSM19j6b6qpuFIiwntVy91Ki/view) | Pico 4 | Headset mount |
-| [sfmountv2.stl](https://drive.google.com/file/d/1HlNYEmdd0DOr8Ox2CQlPZCdoJRnfCpUx/view) | Steam Frame | Headset mount |
+| [Box.stl](../downloads/Box.stl) | Electronics box with the mounting arm | None |
+| [Cap.stl](../downloads/Cap.stl) | Lid for the box | None |
+| [Container.stl](../downloads/Container.stl) | Reservoir tower for the atomizer holder | None |
+| [bambu lab q3 complete.3mf](<../downloads/Complete file/bambu lab q3 complete.3mf>) | All parts plus the Quest 3 mount on one Bambu Lab plate | Set in the file |
+
+**Print settings:** 0.2 mm layers, 3 wall loops, 10% infill. Lay each KVX part with its largest flat face on the build plate.
+
+**Headset mounts** are third-party designs and may need supports:
+
+| Headset | File | Designer |
+| --- | --- | --- |
+| Meta Quest 3 | [Q3_Mount.stl](<../downloads/HMD Mounts/Quest 3>) | [GUUUL on Thingiverse](https://www.thingiverse.com/thing:7261225), CC BY-SA |
+| Pico 4 | HMD_Mount.STL | Third party |
+| Steam Frame | sfmountv2.stl | Third party |
 
 Print in plastic, not wood: the paper's wooden mounts gave off their own smell and broke down from the moisture. Plastic stays odor-neutral and survives the mist.
 
-Open question: the layer height, infill and filament for the non-Bambu files are not written down yet.
 
 ## Tools needed
 
@@ -167,4 +176,5 @@ To unpair, hold BOOT for 3 s while the board runs. To factory reset, hold it for
 - [ToolKitOSC-ESP32](https://github.com/NekoTiki/ToolKitOSC-ESP32), board firmware
 - [Grove – Water Atomization wiki](https://wiki.seeedstudio.com/Grove-Water_Atomization/), Seeed Studio
 - [LOLIN S3 documentation](https://www.wemos.cc/en/latest/s3/s3.html), WEMOS
-- [FINAL STL folder](https://drive.google.com/drive/folders/1FvTILW04FyrTDNEXaO_OHBCcaqlfo1nk), Google Drive
+- [scentOSC print files](../downloads)
+- [Quest 3 facial tracker mount](https://www.thingiverse.com/thing:7261225) by GUUUL, Thingiverse

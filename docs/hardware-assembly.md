@@ -58,8 +58,6 @@ Print the three KVX parts plus the mount for your headset. All files are in the 
 | Steam Frame | [sfmountv2.stl](<../downloads/HMD Mounts/Steam Frame/sfmountv2.stl>) | Third party, [Printables](https://www.printables.com/model/1868935-steam-frame-mount-for-vive-tracker-face-tracker) | No |
 | Pico 4 | [HMD_Mount.STL](<../downloads/HMD Mounts/Pico 4/HMD_Mount.STL>) | Third party | No |
 
-Print in plastic, not wood: the paper's wooden mounts gave off their own smell and broke down from the moisture. Plastic stays odor-neutral and survives the mist.
-
 
 ## Tools needed
 

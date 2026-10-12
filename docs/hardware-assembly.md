@@ -2,6 +2,8 @@
 
 Oct 12, 2026 · @AizenDove
 
+> **Work in progress:** KVX and this guide are still being developed. Parts, steps and files may change.
+
 ## Disclaimer
 
 Build and use KVX at your own risk. We take no responsibility for injury, illness or damage.

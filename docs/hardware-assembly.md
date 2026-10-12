@@ -6,10 +6,10 @@ Oct 12, 2026 · @AizenDove
 
 ## Disclaimer
 
-Build and use KVX at your own risk. We take no responsibility for injury, illness or damage.
+Build and use KVX at your own risk. I take no responsibility for injury, illness or damage.
 
 - **Health:** breathing in scented mist may be unhealthy. If you feel unwell, take the headset off, and see a doctor if it doesn't pass.
-- **Water and electronics:** the unit puts liquid next to live electronics. We take no responsibility for broken electrical components or water damage.
+- **Water and electronics:** the unit puts liquid next to live electronics. I take no responsibility for broken electrical components or water damage.
 - **Not leak-proof:** don't lean too far forward or lie down while wearing it.
 - **Run time:** the reservoir holds about 7 ml, roughly 2–3 minutes of continuous mist.
 - **Spares:** keep spare transducers, as the piezo discs break easily. The wick is a consumable: replace it every time you refill.
@@ -52,7 +52,7 @@ Print the three KVX parts plus the mount for your headset. All files are in the 
 
 **Print settings:** 0.2 mm layers, 3 wall loops, 10% infill. Lay each KVX part with its largest flat face on the build plate.
 
-**Headset mounts** are third-party designs, not made by us, and may need supports. Only the Quest 3 mount has been tested with KVX; the Pico 4 and Steam Frame mounts are untested.
+**Headset mounts** are third-party designs, not made by me, and may need supports. Only the Quest 3 mount has been tested with KVX; the Pico 4 and Steam Frame mounts are untested.
 
 | Headset | File | Designer | Tested with KVX |
 | --- | --- | --- | --- |

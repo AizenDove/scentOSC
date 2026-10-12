@@ -1,1 +1,1 @@
-﻿Third-party design, not made by the scentOSC authors. Untested with KVX.
+﻿Third-party design, not made by me. Untested with KVX.

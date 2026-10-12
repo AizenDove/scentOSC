@@ -13,6 +13,7 @@
 [![PlatformIO](https://img.shields.io/badge/firmware-PlatformIO-F5822A?logo=platformio&logoColor=white)](https://github.com/NekoTiki/ToolKitOSC-ESP32)
 [![3D printable](https://img.shields.io/badge/3D-printable-0ea5a4?logo=printables&logoColor=white)](print-files)
 [![Power: USB-C 5 V](https://img.shields.io/badge/power-USB--C%205%20V-555)](#wiring)
+[![License: CERN-OHL-S-2.0](https://img.shields.io/badge/license-CERN--OHL--S--2.0-blue)](#license)
 
 [Overview](#overview) ·
 [Bill of materials](#bill-of-materials) ·
@@ -20,7 +21,8 @@
 [Wiring](#wiring) ·
 [Assembly](#assembly-steps) ·
 [Firmware](#flashing-firmware-and-connecting-to-vrchat) ·
-[Troubleshooting](#testing-and-troubleshooting)
+[Troubleshooting](#testing-and-troubleshooting) ·
+[License](#license)
 
 <img src="assets/photos/20261010_195304.jpg" alt="KVX mounted on a headset" width="420">
 
@@ -63,6 +65,7 @@ flowchart LR
 ```text
 scentOSC/
 ├── README.md              this guide
+├── LICENSE                CERN-OHL-S v2
 ├── assets/
 │   ├── logo.svg
 │   └── photos/            assembly photos
@@ -237,6 +240,20 @@ To unpair, hold BOOT for 3 s while the board runs. To factory reset, hold it for
 - [Grove – Water Atomization wiki](https://wiki.seeedstudio.com/Grove-Water_Atomization/), Seeed Studio
 - [LOLIN S3 documentation](https://www.wemos.cc/en/latest/s3/s3.html), WEMOS
 - [Quest 3 facial tracker mount](https://www.thingiverse.com/thing:7261225) by GUUUL, Thingiverse
+
+## License
+
+Copyright Chelsea Hong 2026.
+
+KVX is open hardware, licensed under the [CERN Open Hardware Licence Version 2 – Strongly Reciprocal](LICENSE) (CERN-OHL-S v2). This covers the KVX print files (`Box.stl`, `Cap.stl`, `Container.stl`), this guide, the logo and the photos in `assets/`.
+
+You may use, modify and share the design, and build and sell products from it. If you share a modified version, or products made from one, you must also share your modified source under the same licence.
+
+Source location: https://github.com/AizenDove/scentOSC. As the licence requires, products made from this source must point to this location.
+
+This source is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN-OHL-S v2 for applicable conditions.
+
+**Third-party files are not covered.** The headset mounts in [`print-files/mounts/`](print-files/mounts) keep their designers' licenses; the Quest 3 mount by GUUUL is CC BY-SA. `bambu-lab-quest-3-complete.3mf` includes that Quest 3 mount, so the mount part of that file stays under CC BY-SA.
 
 <div align="center">
 <sub>Guide by <a href="https://github.com/AizenDove">@AizenDove</a> · last updated 12 Oct 2026</sub>

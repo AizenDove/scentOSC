@@ -58,7 +58,7 @@ flowchart LR
 | **Capsules** | 1 |
 | **Power** | 5 V over USB-C, from the headset |
 | **Parts** | All printable on a desktop 3D printer |
-| **Headset mounts** | Meta Quest 3, Pico 4, Steam Frame |
+| **Headset mounts** | Meta Quest 3, Pico 4, Steam Frame, or any headset with a GoPro-style mount |
 
 ## Repository layout
 
@@ -91,8 +91,8 @@ One KVX needs one ESP32 board, one atomizer kit and a USB-C cable to your headse
 | Atomizer holder | 1 | Split cap that clamps the transducer, perforated tube that holds the wick | — | [AliExpress](https://www.aliexpress.com/item/1005012259164991.html) |
 | Jumper wires | 3 | Driver J1 pins (EN, VCC, GND) to the LOLIN S3 | — | Any electronics shop |
 | USB-C cable | 1 | Headset USB-C port to the LOLIN S3; carries 5 V | — | Any |
-| Wick | 1 | White fiber stick that fits the holder's tube | — | Any |
-| Essential oils | 1 set | 1 drop per 40 ml of tap water | — | The paper used Aeshory Woody and Salking Nature sets |
+| Wick | 1, plus plenty of spares | White fiber stick that fits the holder's tube; replace it at every refill | — | Any |
+| Scent liquid | Any | Any water-based liquid that gives off a scent; you choose what to smell. Dilute it with distilled water if it is too strong or too thick. | — | Any |
 | Printed parts | 1 set | Box with arm, lid, reservoir tower, headset mount; see next section | — | Your printer |
 
 Prices were checked on 12 Oct 2026. The LOLIN S3 price is from its launch and may have changed.
@@ -112,7 +112,7 @@ To modify the KVX parts in CAD, use the STEP versions in [`print-files/step-file
 > [!TIP]
 > **Print settings:** 0.2 mm layers, 3 wall loops, 10% infill. Lay each KVX part with its largest flat face on the build plate.
 
-**Headset mounts** are third-party designs, not made by me, and may need supports. Only the Quest 3 mount has been tested with KVX; the Pico 4 and Steam Frame mounts are untested.
+**Headset mounts** are third-party designs, not made by me, and may need supports. Only the Quest 3 mount has been tested with KVX; the Pico 4 and Steam Frame mounts are untested. Any headset with a GoPro-style mount is compatible.
 
 | Headset | File | Designer | Tested with KVX |
 | --- | --- | --- | --- |
@@ -153,7 +153,7 @@ flowchart LR
 Plug the headset's USB-C cable into either port on the LOLIN S3; its 5V pin then carries USB power straight through to the atomizer. One atomizer draws at most 0.4 A, well within a headset's USB-C output. Any pin the firmware offers works; GPIO 4 is a suggestion.
 
 > [!NOTE]
-> **Open question:** the Grove driver is specified for 5 V; check that a 3.3 V HIGH from the ESP32 switches it on reliably.
+> Connect the driver's VCC straight to the 5V pin on the ESP32 board.
 
 ## Assembly steps
 
@@ -173,17 +173,17 @@ Plug the headset's USB-C cable into either port on the LOLIN S3; its 5V pin then
    <img src="assets/photos/20261010_194839.jpg" alt="Jumper wires from the driver to GPIO 4, 5V and GND" width="480">
 
 4. Plug the transducer into the driver's white 2-pin socket and lead its cable out through the notch in the box wall.
-5. Close the lid and fasten its two screws.
+5. Close the lid and fasten its two screws (optional).
 
    <img src="assets/photos/20261010_194922.jpg" alt="Closed box with the transducer cable leaving through the notch" width="480">
 
-6. Push a fresh wick into the atomizer holder's tube.
+6. Cut a fresh wick to 60 mm and push it into the atomizer holder's tube.
 
    <img src="assets/photos/20261010_195049.jpg" alt="Atomizer holder and wick" width="480">
 
 7. Clip the transducer into the holder's split cap, mist side facing out.
-8. Fill the reservoir tower (about 7 ml) with tap water and 1 drop of essential oil per 40 ml, then lower the holder in, wick first. The wick must reach the liquid.
-   - Too much oil clogs the wick and weakens the mist.
+8. Fill the reservoir tower (about 7 ml) with your water-based scent mix, then lower the holder in carefully and let the wick absorb the liquid.
+   - A mix that is too thick clogs the wick and weakens the mist; dilute it with distilled water.
    - A wick that is not fully soaked gives only short bursts.
 
    <img src="assets/photos/20261010_195142.jpg" alt="Holder ready to drop into the reservoir tower" width="236">
@@ -225,7 +225,7 @@ Test the atomizer from the ToolKitOSC app before wearing the unit. The serial mo
 | --- | --- | --- |
 | No mist, `[out]` shows the pin on | Wick dry or liquid too low | Refill until the wick is fully soaked |
 | No mist, no `[out]` line | Output not mapped, or tripped by max on-time | Check the mapping; send off or Stop to clear the trip |
-| Mist starts strong, then fades | Too much oil clogging the wick | Replace the wick; go back to 1 drop per 40 ml |
+| Mist starts strong, then fades | Mix too thick, clogging the wick | Replace the wick; dilute the mix with distilled water |
 | Transducer stops when wet on top | Transducer sits below the waterline | Raise it so only the hollow underside touches the wick |
 | Board missing in ToolKitOSC | mDNS blocked (VPN, guest network) | Use **Add by address** with the IP from the serial monitor |
 | Status LED blinks yellow | Board is not on Wi-Fi | Check that the network is 2.4 GHz; after 3 min the setup network reopens |
@@ -257,5 +257,5 @@ This source is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF
 **Third-party files are not covered.** The headset mounts in [`print-files/mounts/`](print-files/mounts) keep their designers' licenses; the Quest 3 mount by GUUUL is CC BY-SA.
 
 <div align="center">
-<sub>Guide by <a href="https://github.com/AizenDove">@AizenDove</a> · last updated 12 Oct 2026</sub>
+<sub>Guide by <a href="https://github.com/AizenDove">@AizenDove</a> · last updated 13 Oct 2026</sub>
 </div>

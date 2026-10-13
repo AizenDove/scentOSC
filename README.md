@@ -73,7 +73,6 @@ scentOSC/
     ├── Box.stl            electronics box with arm
     ├── Cap.stl            lid
     ├── Container.stl      reservoir tower
-    ├── bambu-lab-quest-3-complete.3mf
     ├── step-files/        STEP versions of the KVX parts, for editing
     └── mounts/            third-party headset mounts
         ├── quest-3/
@@ -107,7 +106,6 @@ Print the three KVX parts plus the mount for your headset. All files are in [`pr
 | [Box.stl](print-files/Box.stl) | Electronics box with the mounting arm | None |
 | [Cap.stl](print-files/Cap.stl) | Lid for the box | None |
 | [Container.stl](print-files/Container.stl) | Reservoir tower for the atomizer holder | None |
-| [bambu-lab-quest-3-complete.3mf](print-files/bambu-lab-quest-3-complete.3mf) | All parts plus the Quest 3 mount on one Bambu Lab plate | Set in the file |
 
 To modify the KVX parts in CAD, use the STEP versions in [`print-files/step-files/`](print-files/step-files).
 
@@ -124,7 +122,7 @@ To modify the KVX parts in CAD, use the STEP versions in [`print-files/step-file
 
 ## Tools needed
 
-- 3D printer (the complete plate is set up for Bambu Lab)
+- 3D printer
 - Soldering iron
 - Double-sided tape, to hold the boards in the box
 - USB-C data cable, for flashing the LOLIN S3
@@ -256,7 +254,7 @@ Source location: https://github.com/AizenDove/scentOSC. As the licence requires,
 
 This source is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN-OHL-S v2 for applicable conditions.
 
-**Third-party files are not covered.** The headset mounts in [`print-files/mounts/`](print-files/mounts) keep their designers' licenses; the Quest 3 mount by GUUUL is CC BY-SA. `bambu-lab-quest-3-complete.3mf` includes that Quest 3 mount, so the mount part of that file stays under CC BY-SA.
+**Third-party files are not covered.** The headset mounts in [`print-files/mounts/`](print-files/mounts) keep their designers' licenses; the Quest 3 mount by GUUUL is CC BY-SA.
 
 <div align="center">
 <sub>Guide by <a href="https://github.com/AizenDove">@AizenDove</a> · last updated 12 Oct 2026</sub>

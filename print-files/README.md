@@ -1,6 +1,6 @@
 # Print files
 
-Print `Box.stl`, `Cap.stl` and `Container.stl`, plus the mount for your headset from [`mounts/`](mounts). Bambu Lab users can print everything for Quest 3 from `bambu-lab-quest-3-complete.3mf`.
+Print `Box.stl`, `Cap.stl` and `Container.stl`, plus the mount for your headset from [`mounts/`](mounts).
 
 **Settings:** 0.2 mm layers, 3 wall loops, 10% infill. No supports needed for the KVX parts; lay each one with its largest flat face on the build plate.
 

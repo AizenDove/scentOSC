@@ -39,7 +39,7 @@ Build and use KVX at your own risk. I take no responsibility for injury, illness
 - **Water and electronics:** the unit puts liquid next to live electronics. I take no responsibility for broken electrical components or water damage.
 - **Not leak-proof:** don't lean too far forward or lie down while wearing it.
 - **Run time:** the reservoir holds about 7 ml, roughly 2–3 minutes of continuous mist.
-- **Spares:** keep spare transducers, as the piezo discs break easily. The wick is a consumable: replace it every time you refill.
+- **Spares:** keep spare transducers, as the piezo discs break easily. The wick is a consumable: replace it every time you refill. Spare 20 mm piezo discs and 10 mm wicks are sold cheaply in USB mist maker kits; see [3D printed parts](#3d-printed-parts).
 
 ## Overview
 
@@ -72,7 +72,7 @@ scentOSC/
 └── print-files/
     ├── Box.stl            electronics box with arm
     ├── Cap.stl            lid
-    ├── Container.stl      reservoir tower
+    ├── Container-13.5mm.stl  reservoir tower with a 13.5 mm hole for the atomizer holder
     ├── step-files/        STEP versions of the KVX parts, for editing
     └── mounts/            third-party headset mounts
         ├── quest-3/
@@ -88,24 +88,35 @@ One KVX needs one ESP32 board, one atomizer kit and a USB-C cable to your headse
 | --- | --- | --- | --- | --- |
 | [WEMOS LOLIN S3](https://www.wemos.cc/en/latest/s3/s3.html) | 1 | ESP32-S3-WROOM-1, 3.3 V logic, 16 MB flash, 8 MB PSRAM, 65.3 × 25.4 mm, 9 g | about 7 | [AliExpress (official WEMOS store)](https://www.aliexpress.com/item/1005004643475363.html) |
 | [Grove – Water Atomization v1.0](https://wiki.seeedstudio.com/Grove-Water_Atomization/) (SKU 101020090) | 1 | 5 V DC, 2 W max, 105 kHz; kit = driver board, Grove cable, ultrasonic transducer | 10.90 | [Seeed Studio](https://www.seeedstudio.com/Grove-Water-Atomization-v1-0.html) |
-| Atomizer holder | 1 | Split cap that clamps the transducer, perforated tube that holds the wick | — | [AliExpress](https://www.aliexpress.com/item/1005012259164991.html) |
+| Atomizer holder | 1 | 3D printed holder that clamps the 20 mm transducer and holds the 10 mm wick; use with `Container-13.5mm.stl` | — | [Thingiverse](https://www.thingiverse.com/thing:6420549) (print it yourself) |
 | Jumper wires | 3 | Driver J1 pins (EN, VCC, GND) to the LOLIN S3 | — | Any electronics shop |
 | USB-C cable | 1 | Headset USB-C port to the LOLIN S3; carries 5 V | — | Any |
-| Wick | 1, plus plenty of spares | White fiber stick that fits the holder's tube; replace it at every refill | — | Any |
+| Wick | 1, plus plenty of spares | 10 mm cotton wick that fits the holder's tube; replace it at every refill | — | [AliExpress](https://www.aliexpress.com/item/1005005952918244.html) |
+| Spare 20 mm piezo discs | Optional | Same 20 mm atomizer disc as in the Grove kit; works with the Grove driver board | — | [AliExpress](https://www.aliexpress.com/item/1005004559429683.html) |
 | Scent liquid | Any | Any water-based liquid that gives off a scent; you choose what to smell. Dilute it with distilled water if it is too strong or too thick. | — | Any |
 | Printed parts | 1 set | Box with arm, lid, reservoir tower, headset mount; see next section | — | Your printer |
 
 Prices were checked on 12 Oct 2026. The LOLIN S3 price is from its launch and may have changed.
 
+> [!NOTE]
+> **Links and prices change.** The shops above are only recommendations. Look for the cheapest and most available option where you live.
+
 ## 3D printed parts
 
-Print the three KVX parts plus the mount for your headset. All files are in [`print-files/`](print-files).
+Print the three KVX parts, the atomizer holder and the mount for your headset. All files are in [`print-files/`](print-files).
 
 | File | What it is | Supports |
 | --- | --- | --- |
 | [Box.stl](print-files/Box.stl) | Electronics box with the mounting arm | None |
 | [Cap.stl](print-files/Cap.stl) | Lid for the box | None |
-| [Container.stl](print-files/Container.stl) | Reservoir tower for the atomizer holder | None |
+| [Container-13.5mm.stl](print-files/Container-13.5mm.stl) | Reservoir tower with a 13.5 mm hole for the atomizer holder | None |
+
+**Atomizer holder:** print it from [4.15 Adapter for Mist Maker Kits](https://www.thingiverse.com/thing:6420549) by diy_mushroom_tek on Thingiverse (CC BY-NC-SA). Follow that page for the holder case, spare 10 mm wicks and spare 20 mm atomizers; those parts are compatible with this reservoir.
+
+The Grove kit uses the same 20 mm piezo disc as those mist maker kits, so you still only need the Grove driver board: the wiring stays the same.
+
+> [!WARNING]
+> **Hole size must match:** the reservoir's hole diameter corresponds to the atomizer holder and wick diameter. If your holder or wick is a different size, edit the hole in the STEP file or follow the holder's guide for the best fit. Too loose and it leaks or tips; too tight and the wick gets squeezed and soaks poorly.
 
 To modify the KVX parts in CAD, use the STEP versions in [`print-files/step-files/`](print-files/step-files).
 
@@ -181,7 +192,7 @@ Plug the headset's USB-C cable into either port on the LOLIN S3; its 5V pin then
 
    <img src="assets/photos/20261010_195049.jpg" alt="Atomizer holder and wick" width="480">
 
-7. Clip the transducer into the holder's split cap, mist side facing out.
+7. Seat the transducer in the printed holder, mist side facing out.
 8. Fill the reservoir tower (about 7 ml) with your water-based scent mix, then lower the holder in carefully and let the wick absorb the liquid.
    - A mix that is too thick clogs the wick and weakens the mist; dilute it with distilled water.
    - A wick that is not fully soaked gives only short bursts.
@@ -246,7 +257,7 @@ To unpair, hold BOOT for 3 s while the board runs. To factory reset, hold it for
 
 Copyright Chelsea Hong 2026.
 
-KVX is open hardware, licensed under the [CERN Open Hardware Licence Version 2 – Strongly Reciprocal](LICENSE) (CERN-OHL-S v2). This covers the KVX print files (`Box.stl`, `Cap.stl`, `Container.stl`) and their STEP versions, this guide, the logo and the photos in `assets/`.
+KVX is open hardware, licensed under the [CERN Open Hardware Licence Version 2 – Strongly Reciprocal](LICENSE) (CERN-OHL-S v2). This covers the KVX print files (`Box.stl`, `Cap.stl`, `Container-13.5mm.stl`) and their STEP versions, this guide, the logo and the photos in `assets/`.
 
 You may use, modify and share the design, and build and sell products from it. If you share a modified version, or products made from one, you must also share your modified source under the same licence.
 
@@ -254,8 +265,8 @@ Source location: https://github.com/AizenDove/scentOSC. As the licence requires,
 
 This source is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN-OHL-S v2 for applicable conditions.
 
-**Third-party files are not covered.** The headset mounts in [`print-files/mounts/`](print-files/mounts) keep their designers' licenses; the Quest 3 mount by GUUUL is CC BY-SA.
+**Third-party files are not covered.** The printed atomizer holder on Thingiverse keeps its designer's CC BY-NC-SA licence. The headset mounts in [`print-files/mounts/`](print-files/mounts) keep their designers' licenses; the Quest 3 mount by GUUUL is CC BY-SA.
 
 <div align="center">
-<sub>Guide by <a href="https://github.com/AizenDove">@AizenDove</a> · last updated 13 Oct 2026</sub>
+<sub>Guide by <a href="https://github.com/AizenDove">@AizenDove</a> · last updated 23 Oct 2026</sub>
 </div>
